@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.33829.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCOMLibrary", "CSharpCOMLibrary\CSharpCOMLibrary.csproj", "{171D23E4-8211-4B17-81B1-261BD395A924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCOMLibraryTest", "CSharpCOMLibraryTest\CSharpCOMLibraryTest.csproj", "{F1217E1A-8366-4F29-9376-304BB2476A65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{171D23E4-8211-4B17-81B1-261BD395A924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171D23E4-8211-4B17-81B1-261BD395A924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171D23E4-8211-4B17-81B1-261BD395A924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171D23E4-8211-4B17-81B1-261BD395A924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1217E1A-8366-4F29-9376-304BB2476A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1217E1A-8366-4F29-9376-304BB2476A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1217E1A-8366-4F29-9376-304BB2476A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D7681D9-FE13-43B4-B42A-2A04DB9D7F76}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+<!doctype html><!-- saved from url=(0016)http://localhost -->
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta content="IE=EmulateIE10" http-equiv="X-UA-Compatible">
+	<title>IE Compatible Page</title>
+	<style type="text/css">
+	  body {
+	   font-family: verdana, arial, sans-serif;
+	  }
+	</style>  	
+    <script language="javascript">
+        function beep() {
+			var beepEmitter = new ActiveXObject("CSharpCOMLibrary.BeepEmitter");
+			var beep = beepEmitter.Get;
+			console.log("Beep emitted: " + beep);
+        }
+    </script>
+</head>    
+    <body>
+        <h1>IE9 Compatible Page calling ActiveXObject</h1>
+        <br/>
+        <button onclick="beep()">Beep</button>
+    </body>
+</html>
