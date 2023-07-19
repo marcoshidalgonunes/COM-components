@@ -1,7 +1,7 @@
-﻿using CSharpCOMLibrary;
+﻿using COMLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CSharpCOMLibraryTest
+namespace COMLibraryTest
 {
     [TestClass]
     public class BeepEmitterTest

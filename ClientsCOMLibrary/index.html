@@ -11,7 +11,7 @@
 	</style>  	
     <script language="javascript">
         function beep() {
-			var beepEmitter = new ActiveXObject("CSharpCOMLibrary.BeepEmitter");
+			var beepEmitter = new ActiveXObject("COMLibrary.BeepEmitter");
 			var beep = beepEmitter.Get;
 			console.log("Beep emitted: " + beep);
         }

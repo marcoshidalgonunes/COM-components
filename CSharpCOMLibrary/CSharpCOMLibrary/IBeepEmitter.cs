@@ -1,8 +1,8 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace CSharpCOMLibrary
+namespace COMLibrary
 {
-    [Guid("3647ABAB-4944-4086-9D7C-DF58C1C2AE87")]
+    [Guid("167D1EC0-7ECD-4716-9CF4-A9FD6B54EAC8")]
     public interface IBeepEmitter
     {
         bool Get { get; }
