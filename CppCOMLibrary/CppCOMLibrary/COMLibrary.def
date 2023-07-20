@@ -1,0 +1,11 @@
+; COMLibrary.def : Declares the module parameters for the DLL.
+;
+; This is a part of the Active Template Library.
+
+LIBRARY      COMLibrary.DLL
+
+EXPORTS
+	DllCanUnloadNow      PRIVATE
+	DllGetClassObject    PRIVATE
+	DllRegisterServer    PRIVATE
+	DllUnregisterServer  PRIVATE

@@ -1,0 +1,40 @@
+// This is a part of the ActiveX Template Library.
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+//
+// This source code is only intended as a supplement to the
+// ActiveX Template Library Reference and related
+// electronic documentation provided with the library.
+// See these sources for detailed information regarding the
+// ActiveX Template Library product.
+
+#define DISPID_NEWENUM -4
+[
+	object,
+	uuid(85A0C751-E359-47BE-A531-A5045164DFF8),
+	dual,
+	helpstring("IBeepEmitter Interface"),
+	pointer_default(unique)
+]
+interface IBeepEmitter : IDispatch
+{
+	import "oaidl.idl";
+	[propget, helpstring("Returns if sound is played.")]
+	HRESULT Get([out, retval] BOOL* retval);
+};
+
+[
+	uuid(5F5EDA02-BA03-4B63-8B11-F6A804439823),
+	helpstring("BeepEmitter 1.0 Type Library"),
+	version(1.0)
+]
+library COMLibrary
+{
+	importlib("stdole32.tlb");
+
+	//  Class information
+	[uuid(B76625EA-2F4D-486B-A21F-32EE6AFE5731), helpstring("BeepEmitter Object")]
+	coclass BeepEmitter
+	{
+		[default] interface IBeepEmitter;
+	};
+};
