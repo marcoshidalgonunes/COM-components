@@ -18,8 +18,8 @@
 interface IBeepEmitter : IDispatch
 {
 	import "oaidl.idl";
-	[propget, helpstring("Returns if sound is played.")]
-	HRESULT Get([out, retval] BOOL* retval);
+		[propget, helpstring("Returns if sound was played.")]
+		HRESULT Beeped([out, retval] BOOL* retval);
 };
 
 [

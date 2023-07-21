@@ -4,7 +4,7 @@
 //
 #define IDS_COMLIBRARY                  1
 #define IDS_COMLIBRARY_DESC             1
-#define IDR_BEEPER                      101
+#define IDR_COMLIBRARY                  101
 
 // Next default values for new objects
 //

@@ -46,7 +46,7 @@ public:
 
 	DECLARE_NOT_AGGREGATABLE(CBeepEmitter)
 	DECLARE_GET_CONTROLLING_UNKNOWN()
-	DECLARE_REGISTRY_RESOURCEID(IDR_BEEPER)
+	DECLARE_REGISTRY_RESOURCEID(IDR_COMLIBRARY)
 
 	BEGIN_COM_MAP(CBeepEmitter)
 		COM_INTERFACE_ENTRY(IDispatch)
@@ -57,7 +57,7 @@ public:
 	// IBeepEmitter
 public:
 	CBeepEmitter();
-	STDMETHOD(get_Get)(BOOL* retval);
+	STDMETHOD(get_Beeped)(BOOL* retval);
 };
 
 OBJECT_ENTRY_AUTO(CLSID_BeepEmitter, CBeepEmitter)

@@ -35,6 +35,9 @@
     <None Include="res\CppCOMLibrary.rc2">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="CppCOMLibrary.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">

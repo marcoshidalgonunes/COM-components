@@ -87,7 +87,7 @@ EXTERN_C const IID IID_IBeepEmitter;
     IBeepEmitter : public IDispatch
     {
     public:
-        virtual /* [helpstring][propget] */ HRESULT STDMETHODCALLTYPE get_Get( 
+        virtual /* [helpstring][propget] */ HRESULT STDMETHODCALLTYPE get_Beeped( 
             /* [retval][out] */ BOOL *retval) = 0;
         
     };
@@ -148,7 +148,7 @@ EXTERN_C const IID IID_IBeepEmitter;
             /* [annotation][out] */ 
             _Out_opt_  UINT *puArgErr);
         
-        /* [helpstring][propget] */ HRESULT ( STDMETHODCALLTYPE *get_Get )( 
+        /* [helpstring][propget] */ HRESULT ( STDMETHODCALLTYPE *get_Beeped )( 
             IBeepEmitter * This,
             /* [retval][out] */ BOOL *retval);
         
@@ -189,7 +189,7 @@ EXTERN_C const IID IID_IBeepEmitter;
 
 
 #define IBeepEmitter_get_Get(This,retval)	\
-    ( (This)->lpVtbl -> get_Get(This,retval) ) 
+    ( (This)->lpVtbl -> get_Beeped(This,retval) ) 
 
 #endif /* COBJMACROS */
 

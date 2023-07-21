@@ -7,7 +7,7 @@
 
 CBeepEmitter::CBeepEmitter() {}
 
-STDMETHODIMP CBeepEmitter::get_Get(BOOL* retval)
+STDMETHODIMP CBeepEmitter::get_Beeped(BOOL* retval)
 {
 	if (retval == NULL)
 		return E_POINTER;
