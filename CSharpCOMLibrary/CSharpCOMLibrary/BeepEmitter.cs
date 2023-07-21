@@ -10,7 +10,7 @@ namespace COMLibrary
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool Beep(uint dwFreq, uint dwDuration);
 
-        public bool Get
+        public bool Beeped
         {
             get { return Beep(3500, 50); }
         }

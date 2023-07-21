@@ -1,4 +1,4 @@
 set beepEmitter = CreateObject("COMLibrary.BeepEmitter")
-dim beep
-beep = beepEmitter.Get
-MsgBox("Beep emitted: " & beep)
+dim beeped
+beeped = beepEmitter.Beeped
+MsgBox("Beep emitted: " & beeped)

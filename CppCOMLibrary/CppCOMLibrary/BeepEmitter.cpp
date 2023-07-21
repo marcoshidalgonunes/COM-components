@@ -9,6 +9,8 @@ CBeepEmitter::CBeepEmitter() {}
 
 STDMETHODIMP CBeepEmitter::get_Get(BOOL* retval)
 {
+	if (retval == NULL)
+		return E_POINTER;
 	Beep(3500, 50) ? *retval = true : *retval = false;
 	return S_OK;
 }

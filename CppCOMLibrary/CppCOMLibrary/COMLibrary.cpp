@@ -17,8 +17,8 @@
 
 class COMLibraryModule : public CAtlDllModuleT< COMLibraryModule >
 {
-	// TODO: add construction code here,
-	// Place all significant initialization in InitInstance
+public:
+	DECLARE_LIBID(LIBID_COMLibrary)
 };
 
 
@@ -35,7 +35,6 @@ STDAPI DllCanUnloadNow(void)
 
 STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, LPVOID* ppv)
 {
-	// TODO: Add your specialized code here and/or call the base class
 	return _AtlModule.DllGetClassObject(rclsid, riid, ppv);
 }
 
@@ -48,10 +47,12 @@ extern "C" BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpRes
 
 STDAPI DllRegisterServer(void)
 {
-	return _AtlModule.DllRegisterServer();
+	HRESULT hr = _AtlModule.DllRegisterServer();
+	return hr;
 }
 
 STDAPI DllUnregisterServer(void)
 {
-	return _AtlModule.DllUnregisterServer();
+	HRESULT hr = _AtlModule.DllUnregisterServer();
+	return hr;
 }
