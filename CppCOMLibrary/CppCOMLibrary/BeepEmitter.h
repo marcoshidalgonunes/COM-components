@@ -13,9 +13,6 @@
 #include "resource.h"       // main symbols
 #include "pch.h"
 
-#define IID_DEFINED
-#include "COMLibrary_i.h"
-
 /////////////////////////////////////////////////////////////////////////////
 // BeepEmitter
 

@@ -24,18 +24,15 @@
     <ClCompile Include="BeepEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="COMLibrary_i.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="COMLibrary.def">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="res\CppCOMLibrary.rc2">
+    <None Include="CppCOMLibrary.rgs">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="CppCOMLibrary.rgs">
+    <None Include="res\CppCOMLibrary.rc2">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

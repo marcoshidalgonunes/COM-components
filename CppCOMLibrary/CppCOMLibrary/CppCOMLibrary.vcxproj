@@ -174,7 +174,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"</Command>
       <ModuleDefinitionFile>.\COMLibrary.def</ModuleDefinitionFile>
       <AdditionalOptions>/SAFESEH</AdditionalOptions>
       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
-      <OutputFile>$(OutDir)$(PojectName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -185,6 +185,13 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"</Command>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)"
+
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"</Command>
+      <Message>Registering component...</Message>
+      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -215,7 +222,6 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"</Command>
   <ItemGroup>
     <ClCompile Include="BeepEmitter.cpp" />
     <ClCompile Include="COMLibrary.cpp" />
-    <ClCompile Include="COMLibrary_i.h" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

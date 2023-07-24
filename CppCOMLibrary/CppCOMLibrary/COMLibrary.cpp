@@ -8,6 +8,9 @@
 #include "BeepEmitter.h"
 
 
+#define IID_DEFINED
+#include "COMLibrary_i.c"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif

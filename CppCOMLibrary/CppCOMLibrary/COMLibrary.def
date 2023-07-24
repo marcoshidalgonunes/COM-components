@@ -2,7 +2,7 @@
 ;
 ; This is a part of the Active Template Library.
 
-LIBRARY      COMLibrary.DLL
+LIBRARY      CppCOMLibrary.DLL
 
 EXPORTS
 	DllCanUnloadNow      PRIVATE

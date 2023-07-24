@@ -1,16 +1,16 @@
 HKCR
 {
-	ForceRemove COMLibrary.BeepEmitter.1 = s 'Beeper Class'
+	ForceRemove COMLibrary.BeepEmitter.1 = s 'BeepEmitter Class'
 	{
 		CLSID = s '{B76625EA-2F4D-486B-A21F-32EE6AFE5731}'
 	}
-	ForceRemove COMLibrary.BeepEmitter = s 'Beeper Class'
+	ForceRemove COMLibrary.BeepEmitter = s 'BeepEmitter Class'
 	{
 		CurVer = s 'COMLibrary.BeepEmitter.1'
 	}
 	NoRemove CLSID
 	{
-		ForceRemove {B76625EA-2F4D-486B-A21F-32EE6AFE5731} = s 'Beeper Class'
+		ForceRemove {B76625EA-2F4D-486B-A21F-32EE6AFE5731} = s 'BeepEmitter Class'
 		{
 			ProgID = s 'COMLibrary.BeepEmitter.1'
 			VersionIndependentProgID = s 'COMLibrary.BeepEmitter'
