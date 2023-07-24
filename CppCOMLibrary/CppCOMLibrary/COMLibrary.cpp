@@ -15,6 +15,11 @@
 #define new DEBUG_NEW
 #endif
 
+#ifdef _X86_ extern "C" 
+int _afxForceUSRDLL;
+#else 
+extern "C" { int __afxForceUSRDLL; }
+#endif
 
 // COMLibraryModule construction
 
