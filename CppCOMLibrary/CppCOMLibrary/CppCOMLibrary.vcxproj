@@ -141,15 +141,15 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <CustomBuildStep>
-      <Command>regsvr32 /s /c "$(TargetPath)"
-
-echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"</Command>
+      <Command>
+      </Command>
     </CustomBuildStep>
     <CustomBuildStep>
-      <Message>Registering component...</Message>
+      <Message>Performing Custom Build Step</Message>
     </CustomBuildStep>
     <CustomBuildStep>
-      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <Manifest>
       <EnableDpiAwareness>false</EnableDpiAwareness>
