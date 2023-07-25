@@ -13,9 +13,7 @@
 #define new DEBUG_NEW
 #endif
 
-#ifdef _X86_ extern "C" 
-int _afxForceUSRDLL;
-#else 
+#ifndef _X86_ extern "C" 
 extern "C" { int __afxForceUSRDLL; }
 #endif
 
