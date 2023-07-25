@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
+#include "..\CppCOMLibrary\BeepEmitter.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -9,9 +10,13 @@ namespace CppCOMLibraryTest
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(TestBeeped)
 		{
-			
+			BOOL* retval = false;
+			CBeepEmitter beepEmitter = CBeepEmitter();
+			beepEmitter.get_Beeped(retval);
+
+			Assert::IsTrue(retval);
 		}
 	};
 }
