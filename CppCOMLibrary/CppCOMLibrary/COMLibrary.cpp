@@ -13,7 +13,7 @@
 #define new DEBUG_NEW
 #endif
 
-#ifndef _X86_ extern "C" 
+#ifndef _X86_
 extern "C" { int __afxForceUSRDLL; }
 #endif
 
@@ -30,14 +30,15 @@ public:
 
 COMLibraryModule _AtlModule;
 
-
+__control_entrypoint(DllExport)
 STDAPI DllCanUnloadNow(void)
 {
 	return _AtlModule.DllCanUnloadNow();
 }
 
 
-STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, LPVOID* ppv)
+_Check_return_
+STDAPI  DllGetClassObject(_In_ REFCLSID rclsid, _In_ REFIID riid, _Outptr_ LPVOID FAR* ppv)
 {
 	return _AtlModule.DllGetClassObject(rclsid, riid, ppv);
 }

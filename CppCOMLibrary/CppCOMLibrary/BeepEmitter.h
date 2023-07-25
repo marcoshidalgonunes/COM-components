@@ -10,7 +10,6 @@
 // See these sources for detailed information regarding the
 // Active Template Library product.
 
-#include "resource.h"       // main symbols
 #include "pch.h"
 
 /////////////////////////////////////////////////////////////////////////////
