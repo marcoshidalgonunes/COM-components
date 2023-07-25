@@ -97,7 +97,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <ModuleDefinitionFile>.\CppCOMLibrary.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\COMLibrary.def</ModuleDefinitionFile>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>

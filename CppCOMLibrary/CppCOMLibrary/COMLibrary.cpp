@@ -2,8 +2,6 @@
 //
 
 #include "pch.h"
-#include "framework.h"
-#include "resource.h"
 #include "COMLibrary.h"
 #include "BeepEmitter.h"
 
