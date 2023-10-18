@@ -222,9 +222,7 @@ echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"</Command>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <CustomBuildStep>
-      <Command>regsvr32 /s /c "$(TargetPath)"
-
-echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"</Command>
+      <Command>regsvr32 /s /c "$(TargetPath)"</Command>
       <Message>Registering component...</Message>
       <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
     </CustomBuildStep>
