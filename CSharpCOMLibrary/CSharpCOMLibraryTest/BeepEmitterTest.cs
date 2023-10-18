@@ -11,9 +11,9 @@ namespace COMLibraryTest
         [TestMethod]
         public void TestGetProperty()
         {
-            bool beep = beepEmitter.Beeped;
+            int beep = beepEmitter.Beeped;
 
-            Assert.IsTrue(beep);
+            Assert.IsTrue(beep > 0);
         }
     }
 }

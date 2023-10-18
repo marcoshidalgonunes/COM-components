@@ -7,10 +7,10 @@ namespace COMLibrary
     public class BeepEmitter : IBeepEmitter
     {
         [DllImport("kernel32.dll", SetLastError=true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool Beep(uint dwFreq, uint dwDuration);
+        [return: MarshalAs(UnmanagedType.U4)]
+        private static extern int Beep(uint dwFreq, uint dwDuration);
 
-        public bool Beeped
+        public int Beeped
         {
             get { return Beep(3500, 50); }
         }
